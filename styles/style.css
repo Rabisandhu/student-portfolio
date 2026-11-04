@@ -257,6 +257,19 @@ footer {
     }
 }
 
+/* Events page - small phones: full-width action buttons */
+@media (max-width: 480px) {
+    .card .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .event-badge {
+        font-size: 0.7rem;
+    }
+}
+
 /* ==========================================================================
    Home Page (index.html) - Team Lead
    ========================================================================== */
