@@ -244,6 +244,19 @@ footer {
 
 
 
+/* Events page - responsive layout for tablets and phones */
+@media (max-width: 768px) {
+    .event-meta li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1rem;
+    }
+
+    .event-meta-value {
+        font-size: 0.85rem;
+    }
+}
+
 /* ==========================================================================
    Home Page (index.html) - Team Lead
    ========================================================================== */
