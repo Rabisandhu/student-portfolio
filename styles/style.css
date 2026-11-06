@@ -389,3 +389,106 @@ footer {
     padding: 0.75rem 1rem;
   }
 }
+
+/*
+   Join Page (join.html) - Member 3: Shamsa
+   ========================================================================== */
+
+.join-section {
+    margin-bottom: 2.5rem;
+}
+
+.join-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.join-steps {
+    list-style: none;
+    counter-reset: step;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+}
+
+.join-steps li {
+    counter-increment: step;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+    position: relative;
+}
+
+.join-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.75rem;
+}
+
+.join-steps h3 {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.join-steps p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.join-table-wrap {
+    overflow-x: auto;
+}
+
+.join-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.join-table th,
+.join-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.join-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.join-guidelines {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.join-guidelines li {
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .join-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .join-table th,
+    .join-table td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
