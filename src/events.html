@@ -10,11 +10,11 @@
     <header>
         <div class="nav-container">
             <div class="brand-title">University Clubs Portal</div>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="clubs.html">Club Categories</a></li>
-                    <li><a href="events.html" class="active">Upcoming Events</a></li>
+                    <li><a href="events.html" class="active" aria-current="page">Upcoming Events</a></li>
                     <li><a href="join.html">How to Join</a></li>
                     <li><a href="highlights.html">Achievements</a></li>
                 </ul>
@@ -25,28 +25,170 @@
     <main>
         <section class="hero">
             <h1>Upcoming Events & Activities</h1>
-            <p>Stay informed about workshops, tournaments, guest lectures, and campus festivals.</p>
+            <p>Discover campus workshops, hackathons, sports championships, debates, and cultural showcases. Mark your calendars and participate!</p>
         </section>
 
-        <section class="card-grid">
+        <section class="card-grid" aria-label="Upcoming Events Listing">
+            <!-- Event 1: Annual Hackathon -->
             <article class="card">
+                <span class="event-badge">Hackathon & Coding</span>
                 <h2>Annual Hackathon 2026</h2>
-                <p>A 24-hour collaborative software engineering challenge organized by the Computing Society.</p>
+                <p>A flagship 24-hour collaborative software engineering sprint. Students team up to develop innovative web, mobile, and AI solutions tackling real-world problems.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">Computing Society</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-11-20T09:00">Nov 20–21, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">09:00 AM (24-Hour Event)</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">CS Innovation Lab & Main Auditorium</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">Register Team</a>
             </article>
+
+            <!-- Event 2: Cricket Gala -->
             <article class="card">
+                <span class="event-badge">Sports Championship</span>
                 <h2>Inter-Department Cricket Gala</h2>
-                <p>Annual athletic championship featuring teams from across all university faculties.</p>
+                <p>The biggest athletic tournament of the semester featuring cricket squads from Computer Science, Engineering, Business, and Humanities competing for the trophy.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">University Sports Board</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-11-28">Nov 28 – Dec 02, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">10:00 AM – 05:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">University Central Sports Ground</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">View Schedule</a>
             </article>
+
+            <!-- Event 3: Debate Tournament -->
             <article class="card">
+                <span class="event-badge">Debate & Public Speaking</span>
                 <h2>All-Pakistan Bilingual Declamation</h2>
-                <p>National-level debating tournament hosted by the Literary & Debating Society.</p>
+                <p>National-level parliamentary and parliamentary-style debating tournament bringing together top student orators across universities to debate critical global themes.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">Literary & Debating Society</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-12-08T11:00">December 08, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">11:00 AM – 04:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">Sir Syed Hall, Library Block</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">Audience Pass</a>
+            </article>
+
+            <!-- Event 4: AI Workshop -->
+            <article class="card">
+                <span class="event-badge">Technical Workshop</span>
+                <h2>Hands-on GenAI & Cloud Workshop</h2>
+                <p>An interactive technical masterclass covering Large Language Models, prompt engineering, containerization with Docker, and automated CI/CD cloud deployment.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">Data Science & AI Club</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-12-14T14:00">December 14, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">02:00 PM – 05:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">Software Engineering Lab 3</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">Reserve Seat</a>
+            </article>
+
+            <!-- Event 5: Photography Walk -->
+            <article class="card">
+                <span class="event-badge">Cultural & Arts</span>
+                <h2>Campus Photowalk & Exhibition</h2>
+                <p>A guided photography tour across university architectural landmarks followed by a student gallery exhibit with jury evaluations and photography awards.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">Campus Media Society</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-12-18T13:30">December 18, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">01:30 PM – 05:30 PM</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">Student Center & Courtyard</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">Join Walk</a>
+            </article>
+
+            <!-- Event 6: Music Festival -->
+            <article class="card">
+                <span class="event-badge">Campus Festival</span>
+                <h2>Winter Music Fest & Acoustic Night</h2>
+                <p>An evening celebrating campus musical talent with acoustic sets, classical instrumental ensembles, student bands, and food stalls under the open sky.</p>
+                <ul class="event-meta">
+                    <li>
+                        <span class="event-meta-label">Club:</span>
+                        <span class="event-meta-value">Music & Performing Arts Society</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Date:</span>
+                        <span class="event-meta-value"><time datetime="2026-12-22T18:00">December 22, 2026</time></span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Time:</span>
+                        <span class="event-meta-value">06:00 PM – 09:30 PM</span>
+                    </li>
+                    <li>
+                        <span class="event-meta-label">Venue:</span>
+                        <span class="event-meta-value">University Open Amphitheatre</span>
+                    </li>
+                </ul>
+                <a href="join.html" class="btn">Free Entry Details</a>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 University Clubs Portal &bull; DevOps Fundamentals Assignment 01 Baseline</p>
+        <p>&copy; 2026 University Clubs Portal &bull; Upcoming Events &amp; Activities</p>
     </footer>
 </body>
 </html>
-
